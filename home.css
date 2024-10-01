@@ -1,34 +1,42 @@
+@font-face {
+    font-family: 'sourcesanspro';
+    font-style: normal;
+    font-weight: bold;
+    font-display: block;
+    src: url(https://design.penpot.app/fonts/sourcesanspro-bold.woff) format('woff');
+  }
 *{
     margin: 0 ;
 }
 body{
     background-color:#181818;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
 }
 h3{
     color:#fff;
-    font-size: 30px;
-    font-weight: 800;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: sourcesanspro;
 }
 #home{
-    padding:100px 200px;
     height:100vh;
     width: 100%;
     max-width: 686px;
+    margin: 0 10px;
 }
 #home nav.head{
     display: flex;
     height: auto;
     border-bottom: 2px solid #fff;
     justify-content: space-between;
-    align-items: center ;
+    align-items: center;
     padding: 7px 0;
     border-bottom: 2px solid #fff;
 
 }
 #home nav.head h1{
+    font-family: sourcesanspro;
     font-size:36px;
     font-weight:bold;
     color: #fff;
@@ -48,20 +56,91 @@ h3{
 a{
     text-decoration: none;
 }
-#home .events{}
-#home .events div.upcoming{}
+#home .events{
+    padding:30px 0;
+}
+.sublist-head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sublist-head h3{
+    font-size: 18px;
+    font-weight: 300;
+}
+.line{
+    background-color: white;
+    width: 100%;
+    flex: 1;
+    height: 1px;
+}
  .event-list{
-
+    margin-top: 10px;
  }
- .event-list .event-card{}
- .event-list .event-card div.img{}
+ .event-list .event-card{
+    display: flex;
+    background: linear-gradient(to bottom, rgba(96, 174, 135, 0.665) 0%,rgba(140, 159, 218, 0) 100%);
+    height: 165px;
+    width: auto;
+    border-radius: 4px;
+    padding:15px;
+    gap: 10px;
+ }
+ .event-list .event-card div.img{
+    border: 1px solid #fff;
+    width: 126px;
+    height: auto;
+    border-radius: 6px;
+    
+    
+    
+ }
  .event-list .event-card div.img img{}
 
- .event-list .event-card div.details h5{}
+ .event-list .event-card div.details h5{
+    font-size: 24px;
+    font-weight: 200px;
+    color: #fff;
+
+    
+ }
+ .event-list .event-card div.details{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: start;
+    gap: 5px;
+ }
+ .details h5{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 200;
+ }
+
  .event-list .event-card div.details p{}
- .event-list .event-card div.details div.fund{}
- .event-list .event-card div.details div.fund{}
- .event-list .event-card div.details div.fund span{}
+ .event-list .event-card div.details div.fund{
+    border: 1px solid #fff;
+    bottom: -80px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4px;
+    height: 24px;
+    align-items: center;
+
+
+ }
+ .event-list .event-card div.details div.fund span{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 200;
+ }
+
+ @media screen and (min-width: 450px) {
+    .event-list .event-card{
+        height: 145px;
+    }
+}
 
 
 
