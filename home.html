@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fund Manager</title>
+    <link rel="stylesheet" href="./home.css">
+</head>
+<body>
+    <section id="home">
+        <nav class="head">
+            <h1>Events</h1>
+            <a href="">
+                <div class="button">
+                    New Event
+                </div>
+            </a>
+        </nav>
+        <section class="events">
+            <div class="upcoming">
+                <h3 class="heading">Upcoming Events</h3>
+                <div class="event-list">
+                    <div class="event-card">
+                        <div class="img"><img src="" alt=""></div>
+                        <div class="details">
+                            <h5>{{event.name}}</h5>
+                            <p>{{event.description}}</p>
+                            <div class="fund">
+                                <span>Fund</span>
+                                <span>{{event.acquired_fund}}/{{event.required_fund}}</span>
+
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="past">
+                <h3 class="heading">Past Events</h3>
+                <div class="event-list">
+                    <div class="event-card">
+                        <div class="img"><img src="" alt=""></div>
+                        <div class="details">
+                            <h5>{{event.name}}</h5>
+                            <p>{{event.description}}</p>
+                            <div class="fund">
+                                <span>Fund</span>
+                                <span>{{event.acquired_fund}}/{{event.required_fund}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    
+</body>
+</html>

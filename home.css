@@ -1,0 +1,70 @@
+*{
+    margin: 0 ;
+}
+body{
+    background-color:#181818;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h3{
+    color:#fff;
+    font-size: 30px;
+    font-weight: 800;
+}
+#home{
+    padding:100px 200px;
+    height:100vh;
+    width: 100%;
+    max-width: 686px;
+}
+#home nav.head{
+    display: flex;
+    height: auto;
+    border-bottom: 2px solid #fff;
+    justify-content: space-between;
+    align-items: center ;
+    padding: 7px 0;
+    border-bottom: 2px solid #fff;
+
+}
+#home nav.head h1{
+    font-size:36px;
+    font-weight:bold;
+    color: #fff;
+}
+#home nav.head div.button{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    border: 1px solid #fff;
+    height: 32px;
+    color:#181818;
+    background-color: #fff;
+    padding: 0 10px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
+#home .events{}
+#home .events div.upcoming{}
+ .event-list{
+
+ }
+ .event-list .event-card{}
+ .event-list .event-card div.img{}
+ .event-list .event-card div.img img{}
+
+ .event-list .event-card div.details h5{}
+ .event-list .event-card div.details p{}
+ .event-list .event-card div.details div.fund{}
+ .event-list .event-card div.details div.fund{}
+ .event-list .event-card div.details div.fund span{}
+
+
+
+
+
+
