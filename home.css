@@ -63,6 +63,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10px;
 }
 .sublist-head h3{
     font-size: 18px;
@@ -79,7 +80,9 @@ a{
  }
  .event-list .event-card{
     display: flex;
-    background: linear-gradient(to bottom, rgba(96, 174, 135, 0.665) 0%,rgba(140, 159, 218, 0) 100%);
+    border: 1px solid gray;
+    background: linear-gradient(90deg, rgb(133, 106, 145) 0%, rgb(30, 80, 66) 100%);
+    backdrop-filter: saturate(180%) blur(10px);
     height: 165px;
     width: auto;
     border-radius: 4px;
@@ -97,30 +100,22 @@ a{
  }
  .event-list .event-card div.img img{}
 
- .event-list .event-card div.details h5{
+h5{
     font-size: 24px;
-    font-weight: 200px;
+    font-weight: 600;
     color: #fff;
+}
 
-    
- }
  .event-list .event-card div.details{
     display: flex;
     flex: 1;
     flex-direction: column;
-    justify-content: start;
-    gap: 5px;
- }
- .details h5{
-    color: #fff;
-    font-size: 24px;
-    font-weight: 200;
+    justify-content: space-between;
  }
 
  .event-list .event-card div.details p{}
  .event-list .event-card div.details div.fund{
-    border: 1px solid #fff;
-    bottom: -80px;
+    border-top: 1px solid #fff;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -136,9 +131,9 @@ a{
     font-weight: 200;
  }
 
- @media screen and (min-width: 450px) {
+ @media screen and (max-width: 500px) {
     .event-list .event-card{
-        height: 145px;
+        height: 140px;
     }
 }
 

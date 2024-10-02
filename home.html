@@ -6,6 +6,7 @@
     <title>Fund Manager</title>
     <link rel="stylesheet" href="./home.css">
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    <script src="./home.js"></script>
 </head>
 <body>
     <section id="home">
@@ -29,8 +30,12 @@
                     <div class="event-card">
                         <div class="img"><img src="" alt=""></div>
                         <div class="details">
-                            <h5>{{event.name}}</h5>
-                            <p>{{event.description}}</p>
+                            <div style="display: flex; flex-direction: column;">
+                                <h5>{{event.name}}</h5>
+                                <span>{{event.date}}</span>
+                                <span>{{event.deadline}}</span>
+                                <p>{{event.description}}</p>
+                            </div>
                             <div class="fund">
                                 <span>Fund</span>
                                 <span>10/25</span>
