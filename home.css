@@ -28,12 +28,11 @@ h3{
 #home nav.head{
     display: flex;
     height: auto;
-    border-bottom: 2px solid #fff;
     justify-content: space-between;
-    align-items: center;
+    align-items: end;
     padding: 7px 0;
+    margin: 26px 0;
     border-bottom: 2px solid #fff;
-
 }
 #home nav.head h1{
     font-family: sourcesanspro;
@@ -91,14 +90,10 @@ a{
  }
  .event-list .event-card div.img{
     border: 1px solid #fff;
-    width: 126px;
-    height: auto;
+    height: 100%;
+    aspect-ratio: 3/4;
     border-radius: 6px;
-    
-    
-    
  }
- .event-list .event-card div.img img{}
 
 h5{
     font-size: 24px;
@@ -111,9 +106,9 @@ h5{
     flex: 1;
     flex-direction: column;
     justify-content: space-between;
+    padding: 10px;
  }
 
- .event-list .event-card div.details p{}
  .event-list .event-card div.details div.fund{
     border-top: 1px solid #fff;
     position: relative;

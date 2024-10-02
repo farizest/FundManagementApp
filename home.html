@@ -18,6 +18,7 @@
                 </div>
             </a>
         </nav>
+
         <section class="events">
             <div class="event-sublist">
                 <div class="sublist-head">
@@ -27,28 +28,25 @@
                 </div>
 
                 <div class="event-list">
-                    <div class="event-card">
-                        <div class="img"><img src="" alt=""></div>
-                        <div class="details">
-                            <div style="display: flex; flex-direction: column;">
-                                <h5>{{event.name}}</h5>
-                                <span>{{event.date}}</span>
-                                <span>{{event.deadline}}</span>
-                                <p>{{event.description}}</p>
+                    <a href="./event-student.html">
+                        <div class="event-card">
+                            <div class="img"><img src="" alt=""></div>
+                            <div class="details">
+                                <div style="display: flex; flex-direction: column;">
+                                    <h5>{{event.name}}</h5>
+                                    <span>{{event.date}}</span>
+                                    <span>{{event.deadline}}</span>
+                                    <p>{{event.description}}</p>
+                                </div>
+                                <div class="fund">
+                                    <span>Fund</span>
+                                    <span>10/25</span>
+                                </div>
                             </div>
-                            <div class="fund">
-                                <span>Fund</span>
-                                <span>10/25</span>
-
-                            </div>
-                            
                         </div>
-                    </div>
+                    </a>
                 </div>
-
-
             </div>
-
         </section>
     </section>
 
