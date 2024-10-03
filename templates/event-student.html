@@ -3,9 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/static/styles.css">
     <link rel="stylesheet" href="../static/styles.css">
-    <link rel="stylesheet" href="/static/event-student.css">
     <link rel="stylesheet" href="../static/event-student.css">
     <title>Fund Manager</title>
 </head>
@@ -19,7 +17,7 @@
         <div class="event-card">
             <div class="img"><img src="" alt=""></div>
             <div class="details">
-                <div style="display: flex; flex-direction: column;">
+                <div style="display: flex; flex-direction: column; ">
                     <h5>{{event.name}}</h5>
                     <span>{{event.date}}</span>
                     <span>{{event.deadline}}</span>
@@ -53,7 +51,7 @@
                     </div>
                     <div class="right">
                         <span>
-                           <img src="" alt="cross mark">
+                          <input type="checkbox">
                         </span>
                     </div>
                 </div>
@@ -61,7 +59,9 @@
             <div class="search-bar">
                 <form action="">
                     <input type="text" placeholder="search ">
-                    <div class="button"></div>
+                    <div class="button">
+                        <img src="../assets/search-icon.svg" alt="">
+                    </div>
                 </form>
             </div>
         </div>

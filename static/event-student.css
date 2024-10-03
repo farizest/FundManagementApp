@@ -53,7 +53,10 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 10px;
+    color: rgb(255, 196, 221)
  }
+ 
+
 .event-card div.details div.fund{
     border-top: 1px solid #fff;
     position: relative;
@@ -70,3 +73,106 @@
     font-size: 14px;
     font-weight: 200;
  }
+ .student-details{
+    margin-top: 20px;
+ }
+ .student-details .head{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid white;
+    padding: 7px 0;
+    
+ }
+ .student-details .head .left h3{
+    font-size: 24px;
+    font-weight: 400;
+ } 
+ .student-details .head .right{
+    display: flex;
+    
+ }
+ .student-details .head .right .button{
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 2px 10px;
+    background-color: #363232;
+    border-radius: 4px;
+    margin-right: 10px;
+    
+ }
+ .student-details .head .right .button:last-child{
+    margin-right: 0;
+
+ }
+ .student-details .head .right .active{
+    background: #41B458;
+    
+}
+
+
+ .student-list{
+    margin-top: 20px;
+ }
+ .student-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 38px;
+    padding: 4px 10px;
+    background: #363232;
+    border-radius: 8px;
+}
+ .student-item .left{
+    width: 100%;
+    display: flex;
+ }
+ .student-item .left span{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+ }
+ .student-item .left span.admno{
+   flex: 1;
+ }
+ .student-item .left span.name{
+   flex: 3;
+ }
+ .student-item .left span.fund{
+   flex: 1;
+ }
+ .student-item .right span input{
+    transform: scale(1.5);
+    margin-right: 5px;
+ }
+ .search-bar{
+    width: 100%;
+    max-width: 686px;
+    position:fixed;
+    bottom: 0;
+    
+ }
+ .search-bar form{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+ }
+ .search-bar input{
+    width:100%;
+    height: 12px;
+    padding: 10px 0;
+    margin-right: 5px;
+    border-radius:8px;
+    
+ }
+.search-bar .button{
+    width: 32px;
+    display: block;
+    background-color: #fff;
+    border-radius:8px ;
+}
+.search-bar .button img{
+    width: 32px;
+    display: block;
+}
