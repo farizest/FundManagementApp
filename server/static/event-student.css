@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 *{
     margin: 0;
 }
@@ -6,20 +7,14 @@ h5{
     font-weight: 600;
     color: #fff;
 }
-@font-face {
-    font-family: 'sourcesanspro';
-    font-style: normal;
-    font-weight: bold;
-    font-display: block;
-    src: url(https://design.penpot.app/fonts/sourcesanspro-bold.woff) format('woff');
-  }
 body{
     background-color:#181818;
     display: flex;
     justify-content: center;
+    font-family: 'Noto Sans'; font-size: 22px; font-style: normal;
 }
 #event-details{
-    height:100vh;
+    height:auto;
     width: 100%;
     max-width: 686px;
     margin: 0 10px;
@@ -35,14 +30,14 @@ body{
     border-bottom: 2px solid #fff;
 }
 #event-details nav.head h1{
-    font-family: sourcesanspro;
     font-size:36px;
     font-weight:bold;
     color: #fff;
 }
 #event-details nav.head span{
-    font-size: 20px;
+    font-size: 14px;
     color: white;
+    font-weight: 400;
 }
 #event-details{
     height:100vh;
@@ -57,7 +52,7 @@ body{
     backdrop-filter: saturate(180%) blur(10px);
     height: 165px;
     width: auto;
-    border-radius: 4px;
+    border-radius: 10px;
     padding:15px;
     gap: 10px;
     margin-top: 20px;
@@ -91,3 +86,107 @@ body{
     font-size: 14px;
     font-weight: 200;
  }
+.student-details{
+    margin-top: 20px;
+    
+ }
+ .student-details .head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid white;
+    padding: 7px 0;
+
+ }
+ .student-details .head h3{
+    font-size: 24px;
+    font-weight: 400;
+    color: #fff;
+ }
+ .student-details .head .right{
+    display: flex;
+    
+ }
+ .student-details .head .right .button{
+    padding: 1px 10px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    border-radius: 4px;
+    background-color: #363232;
+    margin-right: 5px;
+ }
+ .student-details .head .right .active{
+    background-color: #41B458;
+    
+ }
+ .student-list{}
+ .student-list .student-item{
+    display: flex;
+    justify-content: space-between;
+    
+    align-items: center;
+    background-color:  #363232;
+    border-radius: 4px;
+    margin-top: 20px;
+    height: 38px;
+    padding: 4px 10px 4px 10px;
+   
+ }
+ .student-list .student-item .left{
+    width:80%;
+    gap: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ .student-list .student-item .left span{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    width: 20%;
+
+ }
+ .student-list .student-item .left span:nth-child(2){
+    width: 60%;
+    text-align: center;
+ }
+ .student-list .student-item .right input{
+    transform: scale(1.5);
+    margin:10px;                                                  
+    
+ }
+ .search-bar{
+    height: 32px;
+    position: fixed;  /* Stick to a fixed position on the page */
+     bottom: 0; 
+     width:666px;
+     z-index: 2;
+     padding: 10px;
+ }
+ .search-bar form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ .search-bar form input{
+    width: 90%;       
+    padding:0 10px;
+    border-radius: 8px;
+    
+
+ }
+ .search-bar form .button{
+    background-color: #fff;
+    color: #41B458;
+    
+    border-radius: 8px;
+    width:32px ;
+    height: 22px;
+ }  
+
+ 
+
+
+
+
