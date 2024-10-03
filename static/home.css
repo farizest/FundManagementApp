@@ -1,18 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-*{
-    margin: 0 ;
-}
-body{
-    background-color:#181818;
-    display: flex;
-    justify-content: center;
-    font-family: 'Noto Sans'; font-size: 22px; font-style: normal;
-}
-h3{
-    color:#fff;
-    font-size: 36px;
-    font-weight: bold;
-}
 #home{
     height:100vh;
     width: 100%;
@@ -28,11 +13,6 @@ h3{
     margin: 26px 0;
     border-bottom: 2px solid #fff;
 }
-#home nav.head h1{
-    font-size:36px;
-    font-weight:bold;
-    color: #fff;
-}
 #home nav.head div.button{
     display: flex;
     align-items: center;
@@ -45,11 +25,9 @@ h3{
     border-radius: 4px;
     text-decoration: none;
 }
-a{
-    text-decoration: none;
-}
 #home .events{
     padding:30px 0;
+    padding-top: 5px;
 }
 .sublist-head{
     display: flex;
@@ -61,23 +39,21 @@ a{
     font-size: 18px;
     font-weight: 300;
 }
-.line{
-    background-color: white;
-    width: 100%;
-    flex: 1;
-    height: 1px;
-}
- .event-list{
+.event-list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     margin-top: 20px;
+    height: 100%;
  }
- .event-list .event-card{
+.event-list .event-card{
     display: flex;
     border: 1px solid gray;
     background: linear-gradient(90deg, rgb(133, 106, 145) 0%, rgb(30, 80, 66) 100%);
     backdrop-filter: saturate(180%) blur(10px);
     height: 165px;
     width: auto;
-    border-radius: 10px;
+    border-radius: 4px;
     padding:15px;
     gap: 10px;
  }
@@ -87,22 +63,16 @@ a{
     aspect-ratio: 3/4;
     border-radius: 6px;
  }
-
-h5{
-    font-size: 24px;
-    font-weight: 600;
-    color: #fff;
-}
-
- .event-list .event-card div.details{
+.event-list .event-card div.details{
     display: flex;
     flex: 1;
     flex-direction: column;
     justify-content: space-between;
     padding: 10px;
+    color: rgb(255, 196, 221)
  }
 
- .event-list .event-card div.details div.fund{
+.event-list .event-card div.details div.fund{
     border-top: 1px solid #fff;
     position: relative;
     display: flex;
@@ -113,20 +83,17 @@ h5{
 
 
  }
- .event-list .event-card div.details div.fund span{
+.event-list .event-card div.details div.fund span{
     color: #fff;
     font-size: 14px;
     font-weight: 200;
  }
 
- @media screen and (max-width: 500px) {
+@media screen and (max-width: 500px) {
     .event-list .event-card{
         height: 140px;
     }
 }
-
-
-
 
 
 

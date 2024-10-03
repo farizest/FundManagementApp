@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://fonts.googleapis.com/css?family=Source Sans Pro' rel='stylesheet'>
+    <link rel="stylesheet" href="/static/styles.css">
+    <link rel="stylesheet" href="../static/styles.css">
     <link rel="stylesheet" href="/static/event-student.css">
     <link rel="stylesheet" href="../static/event-student.css">
     <title>Fund Manager</title>
@@ -45,13 +46,15 @@
             <div class="student-list">
                 <div class="student-item">
                     <div class="left">
-                        <span class="admno">{{event.admno}}</span>
-                        <span class="name">{{event.name}}</span>
-                        <span class="fund">{{event.fund}}</span>
+                        <span class="admno">{{admno}}</span>
+                        <span class="name">{{name}}</span>
+                        <span class="fund">{{fund}}</span>
 
                     </div>
                     <div class="right">
-                        <input style="height: 100%; " type="checkbox">
+                        <span>
+                           <img src="" alt="cross mark">
+                        </span>
                     </div>
                 </div>
             </div>

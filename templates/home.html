@@ -6,7 +6,8 @@
     <title>Fund Manager</title>
     <link rel="stylesheet" href="/static/home.css">
     <link rel="stylesheet" href="../static/home.css">
-    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/static/styles.css">
+    <link rel="stylesheet" href="../static/styles.css">
     <script src="../static/home.js"></script>
     <script src="/static/home.js"></script>
 </head>
@@ -30,21 +31,25 @@
                 </div>
 
                 <div class="event-list">
-                    <div class="event-card">
-                        <div class="img"><img src="" alt=""></div>
-                        <div class="details">
-                            <div style="display: flex; flex-direction: column;">
-                                <h5>{{event.name}}</h5>
-                                <span>{{event.date}}</span>
-                                <span>{{event.deadline}}</span>
-                                <p>{{event.description}}</p>
+                    {% for event in events %}
+                        <a href="">
+                            <div class="event-card">
+                                <div class="img"><img src="" alt=""></div>
+                                <div class="details">
+                                    <div style="display: flex; flex-direction: column;">
+                                        <h5>{{event.name}}</h5>
+                                        <span>Date: {{event.date}}</span>
+                                        <span>Deadline: {{event.deadline}}</span>
+                                        <p>{{event.description}}</p>
+                                    </div>
+                                    <div class="fund">
+                                        <span>Fund</span>
+                                        <span>{{event.acquired_fund}}/{{event.required_fund}}</span>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="fund">
-                                <span>Fund</span>
-                                <span>10/25</span>
-                            </div>
-                        </div>
-                    </div>
+                        </a>
+                    {% endfor %}
                 </div>
             </div>
         </section>
