@@ -150,29 +150,31 @@
     width: 100%;
     max-width: 686px;
     position:fixed;
-    bottom: 0;
-    
- }
- .search-bar form{
+    bottom: 10px;
     display: flex;
     align-items: center;
     justify-content:space-between;
+    height: 30px;
  }
  .search-bar input{
     width:100%;
-    height: 12px;
-    padding: 10px 0;
+    height: 100%;
+    padding: 0 10px;
     margin-right: 5px;
     border-radius:8px;
     
  }
 .search-bar .button{
     width: 32px;
-    display: block;
+    aspect-ratio: 1/1;
+    display: flex;
     background-color: #fff;
-    border-radius:8px ;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
-.search-bar .button img{
+.search-bar .button.span{
     width: 32px;
     display: block;
 }

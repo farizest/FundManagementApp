@@ -1,22 +1,3 @@
-*{
-    margin: 0 ;
-}
-body{
-    background-color:#181818;
-    display: flex;
-    justify-content: center;
-    font-family: "Noto Sans", sans-serif;
-}
-h1{
-    font-size:36px;
-    font-weight:bold;
-    color: #fff;
-}
-h3{
-    color:#fff;
-    font-size: 36px;
-    font-weight: bold;
-}
 #event-add{
     height:100vh;
     width: 100%;
@@ -24,10 +5,18 @@ h3{
     margin: 0 10px;
 }
 #event-add nav.head{
-
+    display: flex;
+    width: 100%;
+    color: #fff;
+    border-bottom: 2px solid white;
+    justify-content: space-between;
+    align-items: center;
+}
+#event-add nav.head span{
+    font-size: 14px;
+    font-weight: 400;
 }
 .inputContainer{
     display: flex;
     flex-wrap: wrap;
-
 }
