@@ -16,7 +16,54 @@
     font-size: 14px;
     font-weight: 400;
 }
+#event-add section{
+    padding: 20px 0;
+}
+
 .inputContainer{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: 20px;
+    
 }
+.inputContainer input{
+    border: 1px solid white;
+    border-radius: 4px;
+    background-color:#181818;
+    padding: 10px 0;
+
+
+
+}
+.inputContainer label{
+    font-size: 18px;
+    font-weight: 400;
+    color: #aeaeae;
+}
+.event-name{
+    width: 300px;
+
+}
+.event-date{
+    width: 300px;
+}
+.deadline-date{
+    width: 300px;
+}
+
+.description input{
+    width: 500px;
+    height: 200px;
+    
+}
+.four{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+
+}
+.four .item{
+    width: 100px;
+}
+
