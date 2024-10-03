@@ -1,5 +1,4 @@
-venv/
-server/core/
-server/db.sqlite3
-server/mainapp/
-server/manage.py
+core/
+mainapp/
+db.sqlite3
+manage.py
