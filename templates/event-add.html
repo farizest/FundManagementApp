@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add new event</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <link rel="stylesheet" href="../static/styles.css">
+    <link rel="stylesheet" href="/static/event-add.css">
+    <link rel="stylesheet" href="../static/event-add.css">
+</head>
+<body>
+    <section id="event-add">
+        <nav class="head"></nav>
+            <h1>Create Event</h1>
+            <span>{{user.admno}}</span>
+        </nav>
+
+        <section>
+            <div class="inputContainer">
+                <label for="name">Event Name</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="inputContainer"></div>
+                <label for="date">Event date</label>
+                <input type="date" id="date" name="date">
+            </div>
+            <div class="inputContainer"></div>
+                <label for="deadline">Deadline date</label>
+                <input type="text" id="deadline" name="deadline">
+            </div>
+            <div class="inputContainer"></div>
+                <label for="description">Description</label>
+                <input type="text" id="description" name="description">
+            </div>
+            <div class="inputContainer"></div>
+                <label for="participants">Participants</label>
+                <input type="text" id="participants" name="participants">
+                <label for="req_fund">Required Fund</label>
+                <input type="text" id="req_fund" name="req_fund">
+                <label for="acq_fund">Acquired Fund</label>
+                <input type="text" id="acq_fund" name="acq_fund">
+                <label for="pps_fund">Fund PPS</label>
+                <input type="text" id="pps_fund" name="pps_fund">
+            </div>
+            <div class="inputContainer"></div>
+                <label for="batch">Batch/es (comma seperated values)</label>
+                <input type="text" id="batch" name="batch">
+                <label for="branch">Branch/es (comma seperated values)</label>
+                <input type="text" id="branch" name="branch">
+            </div>
+            <div class="inputContainer"></div>
+                <label for="manager_1">Manager-1</label>
+                <input type="text" id="manager_1" name="manager_1">
+                <label for="manager_2">Manager-2</label>
+                <input type="text" id="manager_2" name="manager_2">
+            </div>
+            
+        </section>
+
+        <section>
+        </section>
+    </section>
+</body>
+</html>
