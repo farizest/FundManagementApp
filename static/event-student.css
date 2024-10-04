@@ -162,7 +162,7 @@
     padding: 0 10px;
     margin-right: 5px;
     border-radius:8px;
-    
+    border: none;
  }
 .search-bar .button{
     width: 32px;
