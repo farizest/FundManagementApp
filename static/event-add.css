@@ -24,6 +24,7 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
+ 
     
 }
 .inputContainer input{
@@ -50,6 +51,10 @@
 .deadline-date{
     width: 300px;
 }
+.event-date input{
+    color: #fff ;
+    text-align: center;
+}
 
 .description input{
     width: 500px;
@@ -63,7 +68,25 @@
 
 
 }
-.four .item{
-    width: 100px;
+.four .item input{
+    width:80%;
+    
+}
+#event-add section{
+    border-bottom: 2px solid #fff;
+    padding: 20x 0;
+}
+.button{
+   display: flex;
+   justify-content: end;
+}
+.button a{
+    text-align: center;
+    padding: 4px 10px ;
+    background: #338440;
+    border-radius: 4px;
+    color: #fff;
+    width: 80px;
+    margin-top: 20px;
 }
 
