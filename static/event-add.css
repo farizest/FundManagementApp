@@ -78,7 +78,7 @@
    display: flex;
    justify-content: end;
 }
-.button a{
+.button {
     text-align: center;
     padding: 4px 10px ;
     background: #338440;
