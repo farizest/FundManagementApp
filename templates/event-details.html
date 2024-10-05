@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/styles.css">
+    <link rel="stylesheet" href="../static/event-details.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Fund Manager</title>
+</head>
+<body>
+    <section id="event-details">
+        <nav class="head">
+            <h1>Event Details</h1>
+            <span>{{user.admno}}</span>
+        </nav>
+
+        <div class="event-card">
+            <div class="img"><img src="" alt=""></div>
+            <div class="details">
+                <div style="display: flex; flex-direction: column; ">
+                    <h5>{{event.name}}</h5>
+                    <span>{{event.date}}</span>
+                    <span>{{event.deadline}}</span>
+                    <p>{{event.description}}</p>
+                </div>
+                <div class="fund">
+                    <span>Fund</span>
+                    <span>{{event.acquired_fund}}/{{event.required_fund}}</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="student-details">
+            <div class="head">
+                <div class="left">
+                    <h3>Students</h3>
+                </div>
+                <div class="right">
+                    <div class="button unpiad">Unpaid</div>
+                    <div class="button paid">Paid</div>
+                    
+                </div>
+            </div>
+            <div class="student-list">
+                {% for branch in event.branch.all %}
+                    <details {% if event.branch.all != none %} open {% endif %} class="branch-list">
+                        <summary style="color: white;">{{branch.name}}</summary>
+                        {% for batch in event.batch.all %}
+                            <details style="padding-left: 20px;" {% if event.batch.all != none %} open {% endif %} class="batch-list">
+                                <summary style="color: white;">{{batch.name}}</summary>
+                                <span>{{event.batch.all}}</span>
+                                {% for student in batch.user_set.all %}
+                                    {% if student in branch.user_set.all %}
+                                        <div class="student-item">
+                                            <div class="left">
+                                                <span class="admno">{{student.username}}</span>
+                                                <span class="name">{{student.firstname}}</span>
+                                                <span class="fund">{{event.fund_pps}}</span>
+
+                                            </div>
+                                            <div class="right">
+                                                <span>
+                                                    <input type="checkbox" {% if event in student.paid.all %} checked {% endif %}>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    {% endif %}
+                                {% endfor %}
+                            </details>
+                        {% endfor %}
+                    </details>
+                {% endfor %}
+            </div>
+            <div class="search-bar">
+                <input id=searchbar type="text" placeholder="search ">
+                <div class="button" onclick="if (document.getElementById('searchbar').style.display == 'none') {document.getElementById('searchbar').style.display = 'flex'} else {document.getElementById('searchbar').style.display = 'none'}">
+                    <span class="material-symbols-outlined" style="font-size: 22px;">search</span>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
