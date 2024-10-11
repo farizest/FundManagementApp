@@ -32,3 +32,6 @@ h5{
 a{
     text-decoration: none;
 }
+input:focus {
+    color:white;
+}

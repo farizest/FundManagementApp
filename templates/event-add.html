@@ -9,7 +9,7 @@
 </head>
 <body>
     <section id="event-add">
-        <nav class="head">
+        <nav class="head">it
             <h1>Create Event</h1>
             <span>{{user.admno}}</span>
         </nav>
@@ -50,16 +50,28 @@
                 </div>
             </div>
             <div class="inputContainer">
-                <label for="batch">Batch/es (comma seperated values)</label>
-                <input type="text" id="batch" name="batch">
-                <label for="branch">Branch/es (comma seperated values)</label>
-                <input type="text" id="branch" name="branch">
+                <label for="batch">Batches </label>
+                <select name="batch" id="batch">
+                    <option value="" disabled selected>Select Batches</option>
+                    <option value="2021-2025">2021-2025</option>
+                    <option value="2022-2026">2022-2026</option>
+                    <option value="2023-2027">2023-2027</option>
+                    <option value="2024-2028">2024-2028</option>
+                </select>
+                <label for="branch">Branches </label>
+                <select name="branch" id="branch">
+                    <option value="" disabled selected>Select Branches</option>
+                    <option value="AI/DS">AI/DS</option>
+                    <option value="AI/ML">AI/ML</option>
+
+                </select>
             </div>
             <div class="inputContainer">
-                <label for="manager_1">Manager-1</label>
-                <input type="text" id="manager_1" name="manager_1">
-                <label for="manager_2">Manager-2</label>
-                <input type="text" id="manager_2" name="manager_2">
+                <label for="manager">Manager</label>
+                <select name="" id="manager">
+                    <option value=""></option>
+                </select>
+              
             </div>
             
         </section>
